@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7016eac66f5042cb8feb480250a1689b",
+    "revision": "fc0efaac08057101e532abad6eb25884",
     "url": "/goit-react-hw-02-phonebook-rebild/index.html"
   },
   {
-    "revision": "8c61d92844708e3bfd77",
+    "revision": "dd6e0e45d8ee065261c7",
     "url": "/goit-react-hw-02-phonebook-rebild/static/css/main.67f78597.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/goit-react-hw-02-phonebook-rebild/static/js/2.14b0ad3f.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8c61d92844708e3bfd77",
-    "url": "/goit-react-hw-02-phonebook-rebild/static/js/main.9d53f80e.chunk.js"
+    "revision": "dd6e0e45d8ee065261c7",
+    "url": "/goit-react-hw-02-phonebook-rebild/static/js/main.34ed27de.chunk.js"
   },
   {
     "revision": "b8f4d1b5995cc901d223",
