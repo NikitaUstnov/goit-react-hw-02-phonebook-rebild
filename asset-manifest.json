@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/goit-react-hw-02-phonebook-rebild/static/css/main.67f78597.chunk.css",
-    "main.js": "/goit-react-hw-02-phonebook-rebild/static/js/main.c996ee2c.chunk.js",
-    "main.js.map": "/goit-react-hw-02-phonebook-rebild/static/js/main.c996ee2c.chunk.js.map",
+    "main.css": "/goit-react-hw-02-phonebook-rebild/static/css/main.9bdd5610.chunk.css",
+    "main.js": "/goit-react-hw-02-phonebook-rebild/static/js/main.c2bbb8d5.chunk.js",
+    "main.js.map": "/goit-react-hw-02-phonebook-rebild/static/js/main.c2bbb8d5.chunk.js.map",
     "runtime-main.js": "/goit-react-hw-02-phonebook-rebild/static/js/runtime-main.dceee536.js",
     "runtime-main.js.map": "/goit-react-hw-02-phonebook-rebild/static/js/runtime-main.dceee536.js.map",
-    "static/js/2.14b0ad3f.chunk.js": "/goit-react-hw-02-phonebook-rebild/static/js/2.14b0ad3f.chunk.js",
-    "static/js/2.14b0ad3f.chunk.js.map": "/goit-react-hw-02-phonebook-rebild/static/js/2.14b0ad3f.chunk.js.map",
+    "static/js/2.230328a7.chunk.js": "/goit-react-hw-02-phonebook-rebild/static/js/2.230328a7.chunk.js",
+    "static/js/2.230328a7.chunk.js.map": "/goit-react-hw-02-phonebook-rebild/static/js/2.230328a7.chunk.js.map",
     "index.html": "/goit-react-hw-02-phonebook-rebild/index.html",
-    "precache-manifest.f09af634508cd92a4f01369f03becafb.js": "/goit-react-hw-02-phonebook-rebild/precache-manifest.f09af634508cd92a4f01369f03becafb.js",
+    "precache-manifest.39c71c3b1f9193bec859701415008137.js": "/goit-react-hw-02-phonebook-rebild/precache-manifest.39c71c3b1f9193bec859701415008137.js",
     "service-worker.js": "/goit-react-hw-02-phonebook-rebild/service-worker.js",
-    "static/css/main.67f78597.chunk.css.map": "/goit-react-hw-02-phonebook-rebild/static/css/main.67f78597.chunk.css.map",
-    "static/js/2.14b0ad3f.chunk.js.LICENSE.txt": "/goit-react-hw-02-phonebook-rebild/static/js/2.14b0ad3f.chunk.js.LICENSE.txt"
+    "static/css/main.9bdd5610.chunk.css.map": "/goit-react-hw-02-phonebook-rebild/static/css/main.9bdd5610.chunk.css.map",
+    "static/js/2.230328a7.chunk.js.LICENSE.txt": "/goit-react-hw-02-phonebook-rebild/static/js/2.230328a7.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.dceee536.js",
-    "static/js/2.14b0ad3f.chunk.js",
-    "static/css/main.67f78597.chunk.css",
-    "static/js/main.c996ee2c.chunk.js"
+    "static/js/2.230328a7.chunk.js",
+    "static/css/main.9bdd5610.chunk.css",
+    "static/js/main.c2bbb8d5.chunk.js"
   ]
 }
