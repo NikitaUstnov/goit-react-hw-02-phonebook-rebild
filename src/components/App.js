@@ -1,17 +1,15 @@
 import React, { Component } from "react";
 import { v4 as uuidv4 } from "uuid";
+import styles from "./App.module.css";
 import ContactList from "./ContactList/ContactList";
 import Filter from "./Filter/Filter";
 import ContactForm from "./ContactForm/ContactForm";
+import { SwitchTransition, CSSTransition } from "react-transition-group";
+import Title from "./Title/Title";
 
 export default class App extends Component {
   state = {
-    contacts: [
-      { id: "id-1", name: "Rosie Simpson", number: "459-12-56" },
-      { id: "id-2", name: "Hermione Kline", number: "443-89-12" },
-      { id: "id-3", name: "Eden Clements", number: "645-17-79" },
-      { id: "id-4", name: "Annie Copeland", number: "227-91-26" },
-    ],
+    contacts: [],
     filter: "",
   };
 
@@ -72,25 +70,35 @@ export default class App extends Component {
   }
 
   render() {
-    const { filter } = this.state;
+    const { filter, contacts } = this.state;
 
     const visibleContacts = this.getVisibleContacts();
 
     return (
       <div>
-        <h1>Phonebook</h1>
+        <Title title="Phonebook" />
 
         <ContactForm onAddContact={this.addContact} />
         <h2>Contacts</h2>
-        {visibleContacts && (
+        <CSSTransition
+          in={contacts.length >= 1}
+          classNames={styles}
+          timeout={250}
+          unmountOnExit
+        >
           <Filter value={filter} onChangeFilter={this.changeFilter} />
-        )}
-        {visibleContacts.length > 0 && (
+        </CSSTransition>
+        <CSSTransition
+          in={visibleContacts.length > 0}
+          classNames={styles}
+          timeout={250}
+          unmountOnExit
+        >
           <ContactList
             contacts={visibleContacts}
             onRemoveContact={this.removeContact}
           />
-        )}
+        </CSSTransition>
       </div>
     );
   }

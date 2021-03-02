@@ -30,10 +30,31 @@
 .TaskList_actions {
   display: flex;
   justify-content: center;
- 
 }
 
 .TaskList_button {
   margin-right: 4px;
   margin-left: 4px;
+}
+
+.enter {
+  opacity: 0;
+  transform: scale(0.1);
+}
+
+.enterActive {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 250ms linear;
+}
+
+.exit {
+  opacity: 1;
+  transform: scale(1);
+}
+
+.exitActive {
+  opacity: 0;
+  transform: scale(0.1);
+  transition: all 250ms linear;
 }
