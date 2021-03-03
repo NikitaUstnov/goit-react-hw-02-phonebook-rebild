@@ -1,0 +1,23 @@
+.Alert {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 150px;
+  height: 50px;
+
+  background-color: red;
+  border-radius: 5px;
+
+  color: #fff;
+  font-size: 24px;
+}
+
+.appear {
+  transform: translateX(50%);
+}
+
+.appearActive {
+  transform: translateY(0);
+  transition: transform 500ms linear;
+}

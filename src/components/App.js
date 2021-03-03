@@ -6,11 +6,13 @@ import Filter from "./Filter/Filter";
 import ContactForm from "./ContactForm/ContactForm";
 import { SwitchTransition, CSSTransition } from "react-transition-group";
 import Title from "./Title/Title";
+import Alert from "./Alert/Alert";
 
 export default class App extends Component {
   state = {
     contacts: [],
     filter: "",
+    error: false,
   };
 
   addContact = (task) => {
@@ -19,10 +21,14 @@ export default class App extends Component {
       .includes(task.name);
 
     if (searchSameName) {
-      alert(`${task.name} is already in contacts`);
-    } else if (task.name.length === 0) {
-      alert("Fields must be filled!");
-    } else {
+      this.setState(() => ({
+        error: true,
+      }));
+    }
+    // else if (task.name.length === 0) {
+    //   alert("Fields must be filled!");
+    // }
+    else {
       const contact = {
         ...task,
         id: uuidv4(),
@@ -70,12 +76,13 @@ export default class App extends Component {
   }
 
   render() {
-    const { filter, contacts } = this.state;
-
+    const { filter, contacts, error } = this.state;
     const visibleContacts = this.getVisibleContacts();
 
     return (
       <div>
+        {error ? <Alert title="Already exist" /> : <></>}
+
         <Title title="Phonebook" />
 
         <ContactForm onAddContact={this.addContact} />
