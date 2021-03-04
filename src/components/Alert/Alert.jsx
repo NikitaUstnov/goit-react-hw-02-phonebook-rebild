@@ -5,7 +5,7 @@ import styles from "./Alert.module.css";
 
 const Alert = ({ title }) => {
   return (
-    <CSSTransition in={true} appear={true} timeout={500} classNames={styles}>
+    <CSSTransition in={true} appear={true} timeout={250} classNames={styles}>
       <div className={styles.Alert}>
         <span>{title}</span>
       </div>

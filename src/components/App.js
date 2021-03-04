@@ -24,6 +24,14 @@ export default class App extends Component {
       this.setState(() => ({
         error: true,
       }));
+
+      setTimeout(
+        () =>
+          this.setState(() => ({
+            error: false,
+          })),
+        500
+      );
     }
     // else if (task.name.length === 0) {
     //   alert("Fields must be filled!");
