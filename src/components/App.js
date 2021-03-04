@@ -27,8 +27,8 @@ export default class App extends Component {
 
       setTimeout(
         () =>
-          this.setState(() => ({
-            error: false,
+          this.setState((prevStete) => ({
+            error: (this.state.error = !prevStete),
           })),
         500
       );
